@@ -1,7 +1,7 @@
 # Android-x86-virtualbox-lab
 # Android-x86 and Kali Linux Networking Lab
 
-I’m building a virtual networking lab to practice installing operating systems, configuring static IP addresses, and testing connectivity.
+I’m built a virtual networking lab to practice installing operating systems, configuring static IP addresses, and testing connectivity.
 
 The goal is to install Android-x86 9.0 in VirtualBox and connect it to the same NAT Network as my Kali Linux VM.
 
@@ -108,7 +108,6 @@ Make sure both virtual machines are running and connected to the same NATNetwork
 
 1. Open the **Terminal app inside Android**. If one is not available, install a terminal emulator from a trusted source.
 
-## Step 6: Test Connectivity
 
 With both virtual machines running on the same NAT Network, I tested:
 
@@ -122,7 +121,20 @@ All four connectivity tests passed. IP addresses have been omitted from this sum
 Each command sends four ping requests. Successful replies show that the destination is reachable. 
 
 
-<img width="849" height="602" alt="image" src="https://github.com/user-attachments/assets/8d598b93-b541-4460-8086-02d473657c95" />
+Kali Linux → Android: Successful ping replies confirm that Kali can reach the Android VM over the shared NATNetwork.
+Android → Kali Linux: Successful ping replies confirm that Android can reach the Kali VM over the shared NATNetwork.
 
+<img width="307" height="251" alt="image" src="https://github.com/user-attachments/assets/c3bc2ea8-67c6-4581-be38-8751009368ea" />
+
+<img width="655" height="485" alt="image" src="https://github.com/user-attachments/assets/0cccae09-8892-4d7e-8140-d8f641782007" />
+
+
+
+
+## VirtualBox Lab Overview
+
+Android-x86 and Kali Linux virtual machines used to set up and test connectivity over a shared NATNetwork.
+
+<img width="773" height="470" alt="image" src="https://github.com/user-attachments/assets/193e7233-4fe4-4914-83aa-85a35f614a05" />
 
 
