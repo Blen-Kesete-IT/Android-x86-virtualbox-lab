@@ -1,20 +1,19 @@
 # Android-x86-virtualbox-lab
 # Android-x86 and Kali Linux Networking Lab
 
-I’m built a virtual networking lab to practice installing operating systems, configuring static IP addresses, and testing connectivity.
+I built a virtual networking lab to practice installing operating systems, configuring static IP addresses, and testing connectivity.
 
-The goal is to install Android-x86 9.0 in VirtualBox and connect it to the same NAT Network as my Kali Linux VM.
+I installed Android-x86 9.0 in VirtualBox and connected it to the same NAT Network as my Kali Linux VM.
 
-Through this project, I’ll practice:
+Through this project, I practiced:
 
 - Creating and configuring a virtual machine
 - Installing Android-x86 from an ISO
 - Connecting two VMs through a shared NAT Network
 - Configuring IP addresses, a gateway, and DNS
-- Using ping to test communication and internet access
+- Using ping to test communication and internet reachability
 
-I’ll document my setup, challenges, and results here, including screenshots of the connectivity tests.
-
+This repository documents my setup, troubleshooting challenges, and results, including screenshots of the successful connectivity tests.
 ## Step 1: Download the Android-x86 ISO
 
 Download `android-x86_64-9.0-r2.iso` from the official Android-x86 website. This file serves as the installation disc for the Android virtual machine.
@@ -137,4 +136,16 @@ Android-x86 and Kali Linux virtual machines used to set up and test connectivity
 
 <img width="773" height="470" alt="image" src="https://github.com/user-attachments/assets/193e7233-4fe4-4914-83aa-85a35f614a05" />
 
+
+## What I Learned
+
+This lab helped me understand how to connect virtual machines using a shared NAT Network and verify connectivity with ping.
+
+I learned how to:
+- Configure static IP addresses and distinguish them from DHCP-assigned addresses.
+- Check and correct Kali Linux’s IP address.
+- Troubleshoot Android-x86 display issues by testing graphics controllers.
+- Test communication between Android and Kali Linux, as well as internet reachability.
+
+Working through these issues strengthened my troubleshooting skills and reminded me to check each setting carefully before moving to the next step.
 
