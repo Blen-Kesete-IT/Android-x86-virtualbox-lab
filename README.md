@@ -37,6 +37,13 @@ The VM is now ready for the Android-x86 installation.
 
 <img width="683" height="476" alt="image" src="https://github.com/user-attachments/assets/bdd321ee-d3d2-4a18-9769-383f74a97120" />
 
+
+Android9-Lab configured in VirtualBox with 2 GB RAM, an 11.12 GB virtual disk, and the VBoxVGA graphics controller.
+
+
+<img width="798" height="452" alt="image" src="https://github.com/user-attachments/assets/3e499e87-43b0-4e95-b6ed-646ecf74415b" />
+
+
 ## Step 3: Attach the ISO and Install Android-x86
 
 1. Open the VM’s **Settings → Storage**.
@@ -85,13 +92,37 @@ These settings are configured **inside the running Android VM**.
    - **DNS 1:** `8.8.8.8`
 5. Save or apply the settings.
 
-**Troubleshooting note:** I initially forgot to switch from DHCP to Static, so Android kept receiving a different IP address. Make sure **Static** is selected before saving.
+#### Troubleshooting: Android’s IP Address Kept Changing
+
+I initially forgot to change Android’s IP settings from **DHCP** to **Static**, so it kept receiving a different IP address.
+
+To fix this, open **Settings inside Android → Network & Internet → Wi-Fi**, then click the **gear icon** next to the connected Wi-Fi network. Open the edit or advanced network settings, change **IP settings** from **DHCP** to **Static**, enter the required network values, and save.
+
+<img width="565" height="500" alt="image" src="https://github.com/user-attachments/assets/0cfad2be-d793-41d1-b529-f77af4435176" />
 
 
 
+## Step 6: Test Connectivity
+
+Make sure both virtual machines are running and connected to the same NATNetwork.
+
+1. Open the **Terminal app inside Android**. If one is not available, install a terminal emulator from a trusted source.
+
+## Step 6: Test Connectivity
+
+With both virtual machines running on the same NAT Network, I tested:
+
+- **Android to Kali Linux:** Successful ping replies confirmed communication.
+- **Android to the internet:** Successful ping replies confirmed internet reachability.
+- **Kali Linux to Android:** Successful ping replies confirmed communication in the reverse direction.
+- **Kali Linux to the internet:** Successful ping replies confirmed internet reachability.
+
+All four connectivity tests passed. IP addresses have been omitted from this summary.
+
+Each command sends four ping requests. Successful replies show that the destination is reachable. 
 
 
-
+<img width="849" height="602" alt="image" src="https://github.com/user-attachments/assets/8d598b93-b541-4460-8086-02d473657c95" />
 
 
 
